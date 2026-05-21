@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI API — Concept Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Manrope, sans-serif;
+        background: #f7f4ed;
+        color: #111;
+        margin: 0;
+        padding: 24px;
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      header,
+      section {
+        border: 1px solid #e5e0d4;
+        border-radius: 14px;
+      }
+      header {
+        background: #111;
+        color: #fff;
+        padding: 18px 22px;
+        margin-bottom: 16px;
+      }
+      header p {
+        color: #d2d2d2;
+        font-size: 13px;
+      }
+      header a {
+        color: #9ee7a7;
+        text-decoration: none;
+      }
+      section {
+        background: #fff;
+        padding: 16px 20px;
+        margin-bottom: 12px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 17px;
+      }
+      p,
+      li {
+        font-size: 13px;
+        color: #444;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      code {
+        font-family: "JetBrains Mono", monospace;
+        background: #f3efe7;
+        color: #7c3aed;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>AI API Concept Notes</h1>
+        <p>
+          Build provider-agnostic AI endpoints with safety checks and usage
+          controls. <a href="/">← Back</a> ·
+          <a href="/practice.html">Practice</a>
+        </p>
+      </header>
+      <section>
+        <h2>Core architecture</h2>
+        <ul>
+          <li>API layer validates request and policy</li>
+          <li>Adapter selects model/provider</li>
+          <li>Response sanitizer enforces output rules</li>
+          <li>Observability logs latency, tokens, and failures</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Guardrail model</h2>
+        <ul>
+          <li>Input moderation</li>
+          <li>Prompt injection screening</li>
+          <li>Output filtering and schema checks</li>
+          <li>Rate and quota controls</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Starter routes</h2>
+        <p>
+          Current starter routes: <code>GET /api/health</code>,
+          <code>GET /api/lesson</code>, <code>POST /api/demo</code>.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
